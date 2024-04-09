@@ -1,0 +1,7 @@
+.bullet-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 30vh;
+  margin: 2rem;
+}

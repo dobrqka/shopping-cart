@@ -1,0 +1,10 @@
+.bullet-item {
+  background-color: grey;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 25%;
+}
+
+.bullet-item h1 {
+  font-size: 1.25rem;
+}

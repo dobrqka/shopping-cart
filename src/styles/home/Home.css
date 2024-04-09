@@ -1,0 +1,14 @@
+.home-page {
+  display: flex;
+  height: 70vh;
+  background-image: url("/src/assets/home-background.jpg");
+  border-radius: 1rem;
+  padding: 5rem;
+}
+
+.home-modal {
+  background-color: white;
+  opacity: 0.85;
+  padding: 3rem;
+  border-radius: 2rem;
+}
