@@ -11,9 +11,21 @@ export const BulletList = () => {
 
   return (
     <div className="bullet-list">
-      <BulletItem heading="Nutritious" description={para1} />
-      <BulletItem heading="Fresh" description={para2} />
-      <BulletItem heading="Tasty" description={para3} />
+      <BulletItem
+        heading="Nutritious"
+        description={para1}
+        imageUrl={"/src/assets/nutritious.png"}
+      />
+      <BulletItem
+        heading="Fresh"
+        description={para2}
+        imageUrl={"/src/assets/fresh1.png"}
+      />
+      <BulletItem
+        heading="Tasty"
+        description={para3}
+        imageUrl={"/src/assets/yummy.png"}
+      />
     </div>
   );
 };
