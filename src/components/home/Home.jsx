@@ -1,3 +1,4 @@
+import { Navbar } from "../navigation/Navbar";
 import { ShopNow } from "./ShopNow";
 import { BulletList } from "./BulletList";
 import "../../styles/home/Home.css";
@@ -5,6 +6,7 @@ import "../../styles/home/Home.css";
 export const Home = () => {
   return (
     <div className="home-page">
+      <Navbar />
       <div className="home-modal">
         <h1>Welcome to our garden.</h1>
         <p>
