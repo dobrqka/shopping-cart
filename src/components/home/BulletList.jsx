@@ -14,18 +14,14 @@ export const BulletList = () => {
       <BulletItem
         heading="Nutritious"
         description={para1}
-        imageUrl={"/src/assets/nutritious.png"}
+        imageUrl={"/nutritious.png"}
       />
       <BulletItem
         heading="Fresh"
         description={para2}
-        imageUrl={"/src/assets/fresh1.png"}
+        imageUrl={"/fresh1.png"}
       />
-      <BulletItem
-        heading="Tasty"
-        description={para3}
-        imageUrl={"/src/assets/yummy.png"}
-      />
+      <BulletItem heading="Tasty" description={para3} imageUrl={"/yummy.png"} />
     </div>
   );
 };
