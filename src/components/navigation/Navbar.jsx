@@ -11,7 +11,7 @@ export const Navbar = () => {
       <div className="menu-items">
         <NavButton label="Home" />
         <NavButton label="Shop" />
-        <NavButton label="Cart" />
+        <NavButton label="Cart" link="cart" />
       </div>
     </div>
   );
