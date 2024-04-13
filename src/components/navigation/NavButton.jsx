@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const NavButton = ({ label, link }) => {
   return (
-    <button className="nav-button">
-      <Link to={link}>{label}</Link>
-    </button>
+    <Link to={link}>
+      <button className="nav-button">{label}</button>
+    </Link>
   );
 };

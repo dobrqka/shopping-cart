@@ -1,0 +1,28 @@
+.product-item {
+  border: 1px solid grey;
+  border-radius: 2rem;
+  width: 150px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  padding: 2rem;
+  font-size: 0.75rem;
+}
+
+.product-item img {
+  width: 125px;
+  align-self: center;
+  justify-self: center;
+}
+
+.add-to-cart {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+
+.add-to-cart input {
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 0.75rem;
+}
