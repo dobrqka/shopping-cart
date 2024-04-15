@@ -1,6 +1,5 @@
 import { NavButton } from "./NavButton";
 import "../../styles/navigation/Navbar.css";
-import { Outlet } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -16,7 +15,6 @@ export const Navbar = () => {
           <NavButton label="Cart" link="/cart" />
         </div>
       </div>
-      <Outlet />
     </>
   );
 };

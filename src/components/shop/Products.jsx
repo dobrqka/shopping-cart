@@ -2,7 +2,7 @@ import "../../styles/shop/Products.css";
 import { ProductItem } from "./ProductItem";
 import { useEffect, useState } from "react";
 
-export const Products = () => {
+export const Products = ({ add, remove }) => {
   const [products, setProducts] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -16,7 +16,6 @@ export const Products = () => {
         return res.json();
       })
       .then((res) => {
-        console.log(res);
         setProducts(res);
       })
       .catch((error) => setError(error))
@@ -31,7 +30,14 @@ export const Products = () => {
       <h2>Products</h2>
       <div className="product-items">
         {products.map((product) => {
-          return <ProductItem key={product.id} product={product} />;
+          return (
+            <ProductItem
+              key={product.id}
+              product={product}
+              add={() => add(product)}
+              remove={() => remove(product)}
+            />
+          );
         })}
       </div>
     </div>

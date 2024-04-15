@@ -10,6 +10,7 @@
 }
 
 .product-item img {
+  height: 125px;
   width: 125px;
   align-self: center;
   justify-self: center;

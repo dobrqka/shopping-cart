@@ -1,6 +1,6 @@
 import "../../styles/shop/ProductItem.css";
 
-export const ProductItem = ({ product }) => {
+export const ProductItem = ({ product, add }) => {
   return (
     <div className="product-item">
       <img src={product.image} />
@@ -8,7 +8,7 @@ export const ProductItem = ({ product }) => {
       <p>${product.price}</p>
       <div className="add-to-cart">
         <input type="number" value="0"></input>
-        <button>Add to cart</button>
+        <button onClick={add}>Add to cart</button>
       </div>
     </div>
   );

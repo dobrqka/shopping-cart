@@ -1,4 +1,5 @@
-import { App } from "./App.jsx";
+import App from "./App.jsx";
+import { Home } from "./components/home/Home.jsx";
 import { Shop } from "./components/shop/Shop.jsx";
 import { Cart } from "./components/cart/Cart.jsx";
 
@@ -6,14 +7,20 @@ const routes = [
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "cart",
-    element: <Cart />,
-  },
-  {
-    path: "shop",
-    element: <Shop />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "shop",
+        element: <Shop />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
+      },
+    ],
   },
 ];
 

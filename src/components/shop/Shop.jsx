@@ -1,14 +1,19 @@
 import "../../styles/shop/Shop.css";
-import { Navbar } from "../navigation/Navbar";
 import { Products } from "./Products";
+import { useOutletContext } from "react-router-dom";
 
 export const Shop = () => {
+  const [addedProducts, setAddedProducts] = useOutletContext();
+
+  const addProduct = (product) => {
+    setAddedProducts((current) => [...current, { ...product }]);
+  };
+
   return (
     <>
-      <Navbar />
       <div className="shop">
         <h1>Shop</h1>
-        <Products />
+        <Products add={addProduct} />
       </div>
     </>
   );
