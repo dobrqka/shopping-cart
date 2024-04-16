@@ -5,6 +5,7 @@ import { useOutletContext } from "react-router-dom";
 export const Shop = () => {
   const [addedProducts, setAddedProducts] = useOutletContext();
 
+  // adding the same product multiple times should increase its new "quantity" property value
   const addProduct = (product) => {
     setAddedProducts((current) => [...current, { ...product }]);
   };

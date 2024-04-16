@@ -21,8 +21,6 @@ export function App() {
     }
   }, []);
 
-  console.log(addedProducts);
-
   return (
     <>
       <Navbar />
