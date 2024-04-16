@@ -24,7 +24,9 @@ export const Cart = () => {
             return (
               <div key={product.id}>
                 <h3>{product.title}</h3>
-                <p>{product.price}</p>
+                <p>Price: ${product.price}</p>
+                <p>Quantity: {product.quantity}</p>
+                <p>Total price: ${product.price * product.quantity}</p>
                 <button onClick={() => removeProduct(product)}>Remove</button>
               </div>
             );

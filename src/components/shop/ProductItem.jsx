@@ -1,4 +1,5 @@
 import "../../styles/shop/ProductItem.css";
+import { NumberInput } from "./NumberInput";
 
 export const ProductItem = ({ product, add }) => {
   return (
@@ -7,9 +8,11 @@ export const ProductItem = ({ product, add }) => {
       <h3>{product.title}</h3>
       <p>${product.price}</p>
       <div className="add-to-cart">
-        <input type="number" value="0"></input>
+        <NumberInput />
         <button onClick={add}>Add to cart</button>
       </div>
     </div>
   );
 };
+
+// when adding a product, its quantity should be set to the value of the number input

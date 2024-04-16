@@ -18,12 +18,6 @@
 
 .add-to-cart {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
-}
-
-.add-to-cart input {
-  border-radius: 0.5rem;
-  width: 100%;
-  font-size: 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
 }
