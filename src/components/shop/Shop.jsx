@@ -5,9 +5,9 @@ import { useOutletContext } from "react-router-dom";
 export const Shop = () => {
   const [addedProducts, setAddedProducts] = useOutletContext();
 
-  const addProduct = (product) => {
+  const addProduct = (product, amount = 1) => {
     if (addedProducts === null) {
-      setAddedProducts([{ ...product, quantity: 1 }]);
+      setAddedProducts([{ ...product, quantity: amount }]);
     } else {
       const productInstances = addedProducts.filter(
         (item) => item.id === product.id
@@ -15,14 +15,14 @@ export const Shop = () => {
       if (productInstances.length === 0) {
         setAddedProducts((current) => [
           ...current,
-          { ...product, quantity: 1 },
+          { ...product, quantity: amount },
         ]);
       } else {
         setAddedProducts(
           addedProducts.map((item) => {
             if (item.id === product.id) {
               const count = item.quantity;
-              return { ...item, quantity: count + 1 };
+              return { ...item, quantity: count + amount };
             } else return item;
           })
         );

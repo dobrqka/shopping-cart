@@ -1,20 +1,7 @@
 import { useState } from "react";
 import "../../styles/shop/NumberInput.css";
 
-export const NumberInput = () => {
-  const [quantity, setQuantity] = useState(0);
-
-  const increment = () => {
-    setQuantity((current) => current + 1);
-  };
-
-  const decrement = () => {
-    if (quantity == 0) {
-      return;
-    }
-    setQuantity((current) => current - 1);
-  };
-
+export const NumberInput = ({ increment, decrement, quantity }) => {
   return (
     <div className="number-input">
       <p>{quantity}</p>
