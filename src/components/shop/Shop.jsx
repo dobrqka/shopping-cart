@@ -5,9 +5,29 @@ import { useOutletContext } from "react-router-dom";
 export const Shop = () => {
   const [addedProducts, setAddedProducts] = useOutletContext();
 
-  // adding the same product multiple times should increase its new "quantity" property value
   const addProduct = (product) => {
-    setAddedProducts((current) => [...current, { ...product }]);
+    if (addedProducts === null) {
+      setAddedProducts([{ ...product, quantity: 1 }]);
+    } else {
+      const productInstances = addedProducts.filter(
+        (item) => item.id === product.id
+      );
+      if (productInstances.length === 0) {
+        setAddedProducts((current) => [
+          ...current,
+          { ...product, quantity: 1 },
+        ]);
+      } else {
+        setAddedProducts(
+          addedProducts.map((item) => {
+            if (item.id === product.id) {
+              const count = item.quantity;
+              return { ...item, quantity: count + 1 };
+            } else return item;
+          })
+        );
+      }
+    }
   };
 
   return (

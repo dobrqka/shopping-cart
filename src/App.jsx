@@ -5,11 +5,10 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 export function App() {
-  const [addedProducts, setAddedProducts] = useState([]);
+  const [addedProducts, setAddedProducts] = useState(null);
 
-  // test if removing all items updates the localStorage object to an empty array
   useEffect(() => {
-    if (addedProducts.length > 0) {
+    if (addedProducts !== null) {
       localStorage.setItem("products", JSON.stringify(addedProducts));
     }
   }, [addedProducts]);

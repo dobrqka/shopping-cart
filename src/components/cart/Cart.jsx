@@ -19,15 +19,19 @@ export const Cart = () => {
           </button>
         </Link>
         <h1>Cart page</h1>
-        {addedProducts.map((product) => {
-          return (
-            <div key={product.id}>
-              <h3>{product.title}</h3>
-              <p>{product.price}</p>
-              <button onClick={() => removeProduct(product)}>Remove</button>
-            </div>
-          );
-        })}
+        {addedProducts ? (
+          addedProducts.map((product) => {
+            return (
+              <div key={product.id}>
+                <h3>{product.title}</h3>
+                <p>{product.price}</p>
+                <button onClick={() => removeProduct(product)}>Remove</button>
+              </div>
+            );
+          })
+        ) : (
+          <p>Nothing here!</p>
+        )}
       </div>
     </>
   );
