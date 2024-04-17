@@ -8,7 +8,11 @@ export const Cart = () => {
   const [addedProducts, setAddedProducts] = useOutletContext();
 
   const removeProduct = (product) => {
-    setAddedProducts(addedProducts.filter((item) => item.id != product.id));
+    if (addedProducts.length === 1) {
+      setAddedProducts(null);
+    } else {
+      setAddedProducts(addedProducts.filter((item) => item.id != product.id));
+    }
   };
 
   return (

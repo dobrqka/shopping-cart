@@ -22,7 +22,7 @@ export function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar quantity={addedProducts && addedProducts.length} />
       <Outlet context={[addedProducts, setAddedProducts]} />
     </>
   );
