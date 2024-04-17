@@ -28,6 +28,7 @@ export const ProductItem = ({ product, add }) => {
           quantity={quantity}
         />
         <button
+          className="add-button"
           onClick={() => {
             add(product, quantity);
             setQuantity(1);
@@ -39,5 +40,3 @@ export const ProductItem = ({ product, add }) => {
     </div>
   );
 };
-
-// when adding a product, its quantity should be set to the value of the number input

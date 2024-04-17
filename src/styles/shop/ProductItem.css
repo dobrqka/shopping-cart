@@ -10,6 +10,7 @@
 }
 
 .product-item img {
+  object-fit: cover;
   height: 125px;
   width: 125px;
   align-self: center;
@@ -20,4 +21,9 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.25rem;
+}
+
+.add-button {
+  background-color: green;
+  color: white;
 }

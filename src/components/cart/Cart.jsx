@@ -1,6 +1,8 @@
 import "../../styles/cart/Cart.css";
-import { Link } from "react-router-dom";
 import { useOutletContext } from "react-router-dom";
+import { BackButton } from "./BackButton";
+import { CartItem } from "./CartItem";
+import { PriceCalculator } from "./PriceCalculator";
 
 export const Cart = () => {
   const [addedProducts, setAddedProducts] = useOutletContext();
@@ -12,25 +14,23 @@ export const Cart = () => {
   return (
     <>
       <div className="cart">
-        <Link to="/shop">
-          <button className="back-button" to="/shop">
-            <img src="arrow-left.svg" />
-            Back to the shop
-          </button>
-        </Link>
+        <BackButton />
         <h1>Cart page</h1>
         {addedProducts ? (
-          addedProducts.map((product) => {
-            return (
-              <div key={product.id}>
-                <h3>{product.title}</h3>
-                <p>Price: ${product.price}</p>
-                <p>Quantity: {product.quantity}</p>
-                <p>Total price: ${product.price * product.quantity}</p>
-                <button onClick={() => removeProduct(product)}>Remove</button>
-              </div>
-            );
-          })
+          <div className="cart-products">
+            {addedProducts.map((product) => {
+              return (
+                <CartItem
+                  key={product.id}
+                  title={product.title}
+                  price={product.price}
+                  quantity={product.quantity}
+                  remove={() => removeProduct(product)}
+                />
+              );
+            })}
+            <PriceCalculator addedProducts={addedProducts} />
+          </div>
         ) : (
           <p>Nothing here!</p>
         )}
