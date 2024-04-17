@@ -1,0 +1,22 @@
+.price-calculator {
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.price-calculator *:nth-child(n) {
+  border-right: 1px solid grey;
+}
+
+.price-calculator *:last-child {
+  border-right: none;
+}
+
+.pay-button {
+  border: none;
+  background-color: green;
+  color: white;
+  margin: 0.5rem;
+}

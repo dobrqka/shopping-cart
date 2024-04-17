@@ -11,5 +11,13 @@ export const PriceCalculator = ({ addedProducts }) => {
     }
   };
 
-  return <div className="total">${totalPrice()}</div>;
+  return (
+    <div className="price-calculator">
+      <p>Price: ${totalPrice()}</p>
+      <p>Tax (20%): ${(totalPrice() * 0.2).toFixed(2)}</p>
+      <p>Shipping: $10.00</p>
+      <p>Total: ${(totalPrice() + 10 + totalPrice() * 0.2).toFixed(2)}</p>
+      <button className="pay-button">Pay</button>
+    </div>
+  );
 };

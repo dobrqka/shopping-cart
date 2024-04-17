@@ -8,6 +8,7 @@
 .cart-item *:nth-child(n) {
   height: 100%;
   border: 1px solid grey;
+  border-right: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +19,12 @@
   border-bottom-left-radius: 8px;
 }
 
+.cart-item *:last-child {
+  border-right: 1px solid grey;
+}
+
 .cart-item *:nth-child(4) {
+  border-right: 1px solid grey;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   margin-right: 0.5rem;
