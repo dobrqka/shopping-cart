@@ -1,4 +1,5 @@
 import "../../styles/cart/PriceCalculator.css";
+import { Link } from "react-router-dom";
 
 export const PriceCalculator = ({ addedProducts }) => {
   const totalPrice = () => {
@@ -17,7 +18,9 @@ export const PriceCalculator = ({ addedProducts }) => {
       <p>Tax (20%): ${(totalPrice() * 0.2).toFixed(2)}</p>
       <p>Shipping: $10.00</p>
       <p>Total: ${(totalPrice() + 10 + totalPrice() * 0.2).toFixed(2)}</p>
-      <button className="pay-button">Pay</button>
+      <Link to="/pay">
+        <button className="pay-button">Pay</button>
+      </Link>
     </div>
   );
 };

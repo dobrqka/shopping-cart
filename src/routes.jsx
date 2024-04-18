@@ -2,6 +2,7 @@ import App from "./App.jsx";
 import { Home } from "./components/home/Home.jsx";
 import { Shop } from "./components/shop/Shop.jsx";
 import { Cart } from "./components/cart/Cart.jsx";
+import { Pay } from "./components/pay/Pay.jsx";
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "pay",
+        element: <Pay />,
       },
     ],
   },
