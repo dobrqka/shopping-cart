@@ -27,3 +27,8 @@
   background-color: green;
   color: white;
 }
+
+.add-button:active {
+  background-color: rgb(0, 165, 0);
+  color: white;
+}

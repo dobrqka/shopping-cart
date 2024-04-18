@@ -1,0 +1,10 @@
+.warning {
+  background: rgb(255, 113, 113);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  color: white;
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  border-radius: 8px;
+}

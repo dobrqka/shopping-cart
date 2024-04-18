@@ -10,6 +10,7 @@ export const Cart = () => {
   const removeProduct = (product) => {
     if (addedProducts.length === 1) {
       setAddedProducts(null);
+      localStorage.setItem("products", null);
     } else {
       setAddedProducts(addedProducts.filter((item) => item.id != product.id));
     }

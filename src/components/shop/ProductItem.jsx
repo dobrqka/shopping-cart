@@ -16,6 +16,10 @@ export const ProductItem = ({ product, add }) => {
     setQuantity((current) => current - 1);
   };
 
+  const changeQuantity = (target) => {
+    setQuantity(+target);
+  };
+
   return (
     <div className="product-item">
       <img src={product.image} />
@@ -26,6 +30,7 @@ export const ProductItem = ({ product, add }) => {
           increment={increment}
           decrement={decrement}
           quantity={quantity}
+          changeQuantity={changeQuantity}
         />
         <button
           className="add-button"
