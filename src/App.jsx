@@ -9,12 +9,12 @@ export function App() {
 
   useEffect(() => {
     if (addedProducts !== null) {
-      localStorage.setItem("products", JSON.stringify(addedProducts));
+      sessionStorage.setItem("products", JSON.stringify(addedProducts));
     }
   }, [addedProducts]);
 
   useEffect(() => {
-    const products = JSON.parse(localStorage.getItem("products"));
+    const products = JSON.parse(sessionStorage.getItem("products"));
     if (products) {
       setAddedProducts(products);
     }
