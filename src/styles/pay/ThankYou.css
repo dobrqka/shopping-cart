@@ -1,2 +1,15 @@
 .thank-you {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thank-you button {
+  margin-top: 1%;
+  position: relative;
+}
+
+.thank-you img {
+  margin-top: 0;
 }

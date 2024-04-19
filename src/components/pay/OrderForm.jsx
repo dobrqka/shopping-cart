@@ -1,7 +1,14 @@
 import "../../styles/pay/OrderForm.css";
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 
 export const OrderForm = () => {
+  const [addedProducts, setAddedProducts] = useOutletContext();
+
+  const orderNow = () => {
+    setAddedProducts(null);
+    sessionStorage.setItem("products", null);
+  };
+
   return (
     <div className="order-form">
       <form>
@@ -41,7 +48,7 @@ export const OrderForm = () => {
             <input type="radio" id="billing" checked readOnly></input>
           </fieldset>
           <Link to="/thanks">
-            <button className="order-now" type="default">
+            <button className="order-now" type="default" onClick={orderNow}>
               Order Now
             </button>
           </Link>
