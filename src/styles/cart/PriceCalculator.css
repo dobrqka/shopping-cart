@@ -12,9 +12,13 @@
 
 .price-calculator *:last-child {
   border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pay-button {
+  flex: 1;
   border: none;
   background-color: green;
   color: white;

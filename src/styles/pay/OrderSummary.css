@@ -1,0 +1,11 @@
+.order-summary {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.order-items {
+}
+
+.total {
+  grid-column: span 2;
+}

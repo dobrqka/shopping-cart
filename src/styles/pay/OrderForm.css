@@ -1,0 +1,20 @@
+.order-form {
+}
+
+.order-form fieldset:first-child {
+  padding-bottom: 0;
+}
+
+.order-form fieldset div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0.5rem;
+}
+
+.order-form label {
+  align-self: end;
+}
+
+.order-now {
+  margin: 1rem;
+}

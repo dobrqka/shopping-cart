@@ -1,0 +1,15 @@
+.calculator {
+  border: 1px solid grey;
+  margin: 1rem;
+  text-align: end;
+}
+
+.calculator *:nth-child(n) {
+  border: 1px solid grey;
+  margin: 0;
+  padding-right: 35%;
+}
+
+.calculator p:last-child {
+  font-weight: 900;
+}
