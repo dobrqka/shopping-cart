@@ -1,6 +1,11 @@
 .order-form {
 }
 
+.order-form fieldset {
+  border-radius: 8px;
+  margin: 0 20%;
+}
+
 .order-form fieldset:first-child {
   padding-bottom: 0;
 }

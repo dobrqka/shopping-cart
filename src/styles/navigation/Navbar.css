@@ -26,3 +26,7 @@
 .menu-items {
   justify-self: center;
 }
+
+.nav-bar a {
+  color: white;
+}

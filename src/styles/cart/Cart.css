@@ -12,3 +12,41 @@
   flex-direction: column;
   gap: 0.75rem;
 }
+
+table {
+  border-collapse: collapse;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+tr {
+  border-bottom: 1px solid grey;
+  margin: 10rem;
+}
+
+.first-column {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-column p {
+  grid-row: span 2;
+  align-self: center;
+  font-weight: 900;
+}
+
+.image-container {
+  justify-self: center;
+  width: 10%;
+  border: 2px solid green;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.image-container img {
+  object-fit: cover;
+  overflow: hidden;
+  height: 100%;
+  padding: 1rem;
+}

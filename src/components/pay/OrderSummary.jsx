@@ -28,6 +28,7 @@ export const OrderSummary = () => {
                 title={product.title}
                 price={product.price}
                 quantity={product.quantity}
+                image={product.image}
                 remove={() => removeProduct(product)}
               />
             );

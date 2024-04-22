@@ -1,13 +1,14 @@
 .calculator {
-  border: 1px solid grey;
+  border-radius: 8px;
   margin: 1rem;
   text-align: end;
 }
 
 .calculator *:nth-child(n) {
   border: 1px solid grey;
+  border-radius: 8px;
   margin: 0;
-  padding-right: 35%;
+  padding-right: 5%;
 }
 
 .calculator p:last-child {

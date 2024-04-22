@@ -1,15 +1,22 @@
 import "../../styles/cart/CartItem.css";
 
-export const CartItem = ({ title, price, quantity, remove }) => {
+export const CartItem = ({ title, price, quantity, remove, image }) => {
   return (
-    <div className="cart-item">
-      <h3>{title}</h3>
-      <p>Price: ${price.toFixed(2)}</p>
-      <p>Quantity: {quantity}</p>
-      <p>Total price: ${(price * quantity).toFixed(2)}</p>
-      <button className="remove-button" onClick={remove}>
-        Remove
-      </button>
-    </div>
+    <tr className="cart-item">
+      <td className="first-column">
+        <div className="image-container">
+          <img src={image}></img>
+        </div>
+        <p>{title}</p>
+      </td>
+      <td>${price.toFixed(2)}</td>
+      <td>x{quantity}</td>
+      <td>${(price * quantity).toFixed(2)}</td>
+      <td>
+        <button className="remove-button" onClick={remove}>
+          x
+        </button>
+      </td>
+    </tr>
   );
 };

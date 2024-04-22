@@ -2,8 +2,9 @@
   border: 1px solid grey;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin: 1rem;
+  margin: 1.5rem;
   border-radius: 8px;
+  font-size: 1.25rem;
 }
 
 .price-calculator *:nth-child(n) {

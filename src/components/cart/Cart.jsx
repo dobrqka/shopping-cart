@@ -23,17 +23,30 @@ export const Cart = () => {
         <h1>Cart page</h1>
         {addedProducts ? (
           <div className="cart-products">
-            {addedProducts.map((product) => {
-              return (
-                <CartItem
-                  key={product.id}
-                  title={product.title}
-                  price={product.price}
-                  quantity={product.quantity}
-                  remove={() => removeProduct(product)}
-                />
-              );
-            })}
+            <table>
+              <thead>
+                <tr className="table-head-row">
+                  <th>Item</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {addedProducts.map((product) => {
+                  return (
+                    <CartItem
+                      key={product.id}
+                      title={product.title}
+                      price={product.price}
+                      quantity={product.quantity}
+                      image={product.image}
+                      remove={() => removeProduct(product)}
+                    />
+                  );
+                })}
+              </tbody>
+            </table>
             <PriceCalculator addedProducts={addedProducts} />
           </div>
         ) : (
