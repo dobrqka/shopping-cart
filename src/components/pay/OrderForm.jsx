@@ -43,7 +43,7 @@ export const OrderForm = () => {
             <input type="number" id="phone"></input>
           </div>
           <fieldset className="payment-option">
-            <legend>Payment option:</legend>
+            <legend>Payment options:</legend>
             <label htmlFor="billing">Cash on delivery</label>
             <input type="radio" id="billing" checked readOnly></input>
           </fieldset>
