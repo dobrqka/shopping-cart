@@ -10,6 +10,8 @@
 .cart-products {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0.75rem;
 }
 
@@ -19,20 +21,27 @@ table {
   font-size: 1.5rem;
 }
 
+.table-head-row th {
+  width: 20%;
+  white-space: nowrap;
+}
+
+.table-head-row th:first-child {
+  width: 30%;
+}
+
 tr {
   border-bottom: 1px solid grey;
-  margin: 10rem;
 }
 
-.first-column {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.first-column > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 2rem;
 }
 
-.first-column p {
-  grid-row: span 2;
-  align-self: center;
+p {
   font-weight: 900;
 }
 

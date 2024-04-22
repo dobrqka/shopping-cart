@@ -30,6 +30,7 @@ export const Cart = () => {
                   <th>Price</th>
                   <th>Quantity</th>
                   <th>Total</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
