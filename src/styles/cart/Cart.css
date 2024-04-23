@@ -23,7 +23,7 @@ table {
 
 .table-head-row th {
   width: 20%;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .table-head-row th:first-child {
@@ -46,6 +46,7 @@ p {
 }
 
 .image-container {
+  display: flex;
   justify-self: center;
   width: 10%;
   border: 2px solid green;
@@ -57,5 +58,5 @@ p {
   object-fit: cover;
   overflow: hidden;
   height: 100%;
-  padding: 1rem;
+  padding: 0.25rem;
 }

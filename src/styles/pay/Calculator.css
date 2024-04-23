@@ -1,14 +1,16 @@
 .calculator {
-  border-radius: 8px;
+  border-bottom: 1px solid grey;
   margin: 1rem;
+  padding-bottom: 1rem;
   text-align: end;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 2fr 1fr;
 }
 
 .calculator *:nth-child(n) {
-  border: 1px solid grey;
-  border-radius: 8px;
-  margin: 0;
-  padding-right: 5%;
+  margin: 0.5rem;
+  font-weight: 400;
+  grid-column: 4/6;
 }
 
 .calculator p:last-child {
