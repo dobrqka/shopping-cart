@@ -4,6 +4,8 @@
   flex-wrap: wrap;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+  margin: 0 10%;
+  padding: 0;
 }
 
 .loading {

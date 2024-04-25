@@ -26,10 +26,6 @@ table {
   white-space: wrap;
 }
 
-.table-head-row th:first-child {
-  width: 20%;
-}
-
 tr {
   border-bottom: 1px solid grey;
 }
@@ -38,7 +34,7 @@ tr {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding-left: 35%;
+  padding-left: 10%;
 }
 
 p {

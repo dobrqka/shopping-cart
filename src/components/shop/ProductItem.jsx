@@ -23,8 +23,10 @@ export const ProductItem = ({ product, add }) => {
   return (
     <div className="product-item">
       <img src={product.image} />
-      <h3>{product.title}</h3>
-      <p>${product.price}</p>
+      <div>
+        <h3>{product.title}</h3>
+        <p>${product.price}</p>
+      </div>
       <div className="add-to-cart">
         <NumberInput
           increment={increment}

@@ -3,4 +3,15 @@
   color: white;
   font-weight: 900;
   opacity: 1;
+  transition: 0.4s;
+}
+
+#shop-now:hover {
+  background-color: rgb(20, 104, 20);
+  transform: scale(1.5);
+}
+
+#shop-now:active {
+  background-color: rgb(12, 59, 12);
+  transform: scale(1);
 }
