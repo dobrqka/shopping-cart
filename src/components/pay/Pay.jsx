@@ -10,7 +10,7 @@ export const Pay = () => {
         This is a fake shop. Please do not insert your actual personal
         information.
       </h2>
-      <BackButton page="cart" />
+      <BackButton page="cart" direction="Back" />
       <OrderSummary />
     </div>
   );

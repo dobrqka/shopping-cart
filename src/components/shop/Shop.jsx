@@ -1,5 +1,6 @@
 import "../../styles/shop/Shop.css";
 import { Products } from "./Products";
+import { BackButton } from "../cart/BackButton";
 import { useOutletContext } from "react-router-dom";
 
 export const Shop = () => {
@@ -34,6 +35,7 @@ export const Shop = () => {
     <>
       <div className="shop">
         <h1>Shop</h1>
+        <BackButton page="cart" direction="Go" />
         <Products add={addProduct} />
       </div>
     </>

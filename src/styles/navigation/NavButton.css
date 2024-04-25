@@ -17,6 +17,7 @@
   color: white;
   font-size: 0.9rem;
   font-weight: 900;
+  transition: 0.5s;
 }
 
 .nav-button:hover {
@@ -26,4 +27,9 @@
 
 .nav-button:active {
   background-color: rgb(168, 0, 0);
+}
+
+.nav-button:hover span {
+  background-color: white;
+  color: red;
 }

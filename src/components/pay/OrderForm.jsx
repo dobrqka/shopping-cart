@@ -19,7 +19,7 @@ export const OrderForm = () => {
             <input type="email" id="email"></input>
           </div>
           <div>
-            <label htmlFor="name">First and last name: </label>
+            <label htmlFor="name">Name: </label>
             <input type="text" id="name"></input>
           </div>
           <div>
@@ -48,7 +48,12 @@ export const OrderForm = () => {
             <input type="radio" id="billing" checked readOnly></input>
           </fieldset>
           <Link to="/thanks">
-            <button className="order-now" type="default" onClick={orderNow}>
+            <button
+              className="order-now"
+              type="default"
+              onClick={orderNow}
+              // disabled={true}
+            >
               Order Now
             </button>
           </Link>

@@ -61,4 +61,16 @@ form .payment-option {
 
 .order-now {
   margin: 1rem;
+  transition: 0.2s;
+}
+
+.order-now:hover {
+  transform: scale(1.2);
+  outline: red solid 2px;
+}
+
+.order-now:active {
+  outline: none;
+  color: white;
+  background-color: red;
 }

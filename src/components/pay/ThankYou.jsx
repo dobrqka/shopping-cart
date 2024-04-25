@@ -12,7 +12,7 @@ export const ThankYou = () => {
         your order!
       </p>
       <p>You order ID is #{Math.floor(Math.random() * 1000) + 100}</p>
-      <BackButton page="shop" />
+      <BackButton page="shop" direction="Back" />
     </div>
   );
 };

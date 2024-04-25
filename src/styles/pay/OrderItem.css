@@ -41,4 +41,13 @@
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
+  transition: 0.3s;
+}
+
+.remove-container > .remove-button:hover {
+  background-color: rgb(255, 63, 63);
+}
+
+.remove-container > .remove-button:active {
+  background-color: rgb(177, 0, 0);
 }

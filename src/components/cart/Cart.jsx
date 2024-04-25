@@ -19,7 +19,7 @@ export const Cart = () => {
   return (
     <>
       <div className="cart">
-        <BackButton page="shop" />
+        <BackButton page="shop" direction="Back" />
         <h1>Cart page</h1>
         {addedProducts ? (
           <div className="cart-products">

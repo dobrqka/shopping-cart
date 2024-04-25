@@ -11,4 +11,13 @@
   width: 2rem;
   border-radius: 50%;
   font-weight: 900;
+  transition: 0.4s;
+}
+
+.remove-button:hover {
+  background-color: rgb(255, 50, 50);
+}
+
+.remove-button:active {
+  background-color: rgb(185, 0, 0);
 }

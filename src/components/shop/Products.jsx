@@ -35,7 +35,6 @@ export const Products = ({ add, remove }) => {
 
   return (
     <div className="products">
-      <h2>Products</h2>
       <div className="product-items">
         {products.map((product) => {
           return <ProductItem key={product.id} product={product} add={add} />;

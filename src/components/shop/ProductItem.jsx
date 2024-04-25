@@ -6,6 +6,9 @@ export const ProductItem = ({ product, add }) => {
   const [quantity, setQuantity] = useState(1);
 
   const increment = () => {
+    if (quantity == 10) {
+      return;
+    }
     setQuantity((current) => current + 1);
   };
 

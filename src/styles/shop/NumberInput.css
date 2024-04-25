@@ -37,3 +37,15 @@
   font-weight: 600;
   font-style: normal;
 }
+
+.increase:hover,
+.decrease:hover {
+  background-color: rgb(126, 126, 126);
+  color: white;
+}
+
+.increase:active,
+.decrease:active {
+  background-color: rgb(107, 107, 107);
+  color: white;
+}

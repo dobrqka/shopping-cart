@@ -4,6 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("/shop-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.shop .back-button {
+  right: 10%;
+  left: auto;
+  margin: 2rem;
 }

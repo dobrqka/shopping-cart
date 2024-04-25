@@ -25,10 +25,10 @@ export const NumberInput = ({
           {quantity}
         </button>
       )}
-      <button name="increase" onClick={increment}>
+      <button name="increase" className="increase" onClick={increment}>
         +
       </button>
-      <button name="decrease" onClick={decrement}>
+      <button name="decrease" className="decrease" onClick={decrement}>
         -
       </button>
       {showWarning && <Warning />}
