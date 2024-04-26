@@ -1,6 +1,9 @@
 .order-summary {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: rgba(134, 134, 134, 0.9);
+  border-radius: 8px;
+  color: white;
 }
 
 .order-items {

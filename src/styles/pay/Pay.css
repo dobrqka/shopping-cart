@@ -1,9 +1,37 @@
 .pay {
   width: 100vw;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-image: url("/pay-background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.pay h1 {
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  color: rgb(128, 128, 128);
+  margin-bottom: 0;
 }
 
 .pay h2 {
-  color: red;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  background-color: rgba(255, 37, 37, 0.9);
+}
+
+.pay .back-button {
+  top: 0.5rem;
+  left: 10%;
+  right: auto;
+  margin: 2rem;
 }

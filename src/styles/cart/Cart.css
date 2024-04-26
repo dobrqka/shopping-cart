@@ -1,10 +1,22 @@
 .cart {
   position: relative;
   width: 100vw;
+  height: 80vh;
+  background-image: url("/cart-background.png");
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cart .back-button {
+  z-index: 1;
 }
 
 .cart h1 {
+  position: relative;
   text-align: center;
+  z-index: 1;
 }
 
 .cart-products {
@@ -13,6 +25,10 @@
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
+  margin: 5%;
+  border-radius: 8px;
+  background-color: rgba(136, 136, 136, 0.9);
+  color: white;
 }
 
 table {
@@ -27,7 +43,7 @@ table {
 }
 
 tr {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid white;
 }
 
 .first-column > div {
@@ -55,4 +71,21 @@ p {
   overflow: hidden;
   height: 100%;
   padding: 0.25rem;
+}
+
+.empty-cart {
+  font-size: 2.5rem;
+  background-color: rgb(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
 }

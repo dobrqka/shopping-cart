@@ -51,7 +51,7 @@ export const Cart = () => {
             <PriceCalculator addedProducts={addedProducts} />
           </div>
         ) : (
-          <p>Nothing here!</p>
+          <p className="empty-cart">Your cart is empty.</p>
         )}
       </div>
     </>
