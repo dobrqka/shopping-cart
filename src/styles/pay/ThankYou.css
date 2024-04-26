@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .thank-you button {
@@ -12,4 +14,8 @@
 
 .thank-you img {
   margin-top: 0;
+}
+
+.thank-you p {
+  font-weight: 600;
 }

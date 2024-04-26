@@ -8,3 +8,7 @@
 .bullet-item h1 {
   font-size: 1.25rem;
 }
+
+.bullet-item p {
+  font-weight: 500;
+}

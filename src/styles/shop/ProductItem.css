@@ -9,6 +9,7 @@
   font-size: 1rem;
   background-color: rgb(172, 172, 172);
   color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 .product-item h3,
@@ -40,11 +41,12 @@
 }
 
 .add-button {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: green;
   color: white;
   outline: none;
   transition: 0.4s;
+  font-weight: 700;
 }
 
 .add-button:hover {
