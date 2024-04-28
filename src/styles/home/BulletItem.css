@@ -12,3 +12,18 @@
 .bullet-item p {
   font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+  .bullet-item {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .bullet-list .bullet-item h1 {
+    font-size: 1.5rem;
+  }
+
+  .bullet-item > p {
+    font-size: 1.25rem;
+  }
+}

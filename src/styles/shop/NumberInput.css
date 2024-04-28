@@ -38,6 +38,11 @@
   font-style: normal;
 }
 
+.increase,
+.decrease {
+  transition: 0.1s;
+}
+
 .increase:hover,
 .decrease:hover {
   background-color: rgb(126, 126, 126);
@@ -48,4 +53,5 @@
 .decrease:active {
   background-color: rgb(107, 107, 107);
   color: white;
+  transform: scale(1.05);
 }
