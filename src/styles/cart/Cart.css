@@ -136,6 +136,11 @@ p {
     margin: 0;
   }
 
+  .first-column {
+    grid-row: span 2;
+    align-self: stretch;
+  }
+
   td {
     justify-self: start;
     align-self: center;
@@ -148,13 +153,14 @@ p {
   }
 
   .quantity {
+    grid-row: span 2;
     grid-column: 2/3;
-    justify-self: end;
+    justify-self: center;
   }
 
   .total-price {
     justify-self: end;
-    grid-column: span 3;
+    grid-column: 3/4;
   }
 
   .remove-container {
@@ -170,6 +176,11 @@ p {
   }
 
   .image-container {
+    height: 45px;
     margin: 0.25rem;
+  }
+
+  .image-container img {
+    height: auto;
   }
 }
