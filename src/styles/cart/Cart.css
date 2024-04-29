@@ -92,3 +92,84 @@ p {
   margin: auto;
   z-index: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .cart h1 {
+    display: none;
+  }
+
+  .cart .back-button {
+    margin: 0.5rem;
+    position: relative;
+  }
+
+  .cart-products {
+    display: block;
+    gap: 1rem;
+    margin: 0.5rem;
+    padding: 0.1rem;
+  }
+
+  table {
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .table-head-row th {
+    display: none;
+  }
+
+  tr {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    border-bottom: 1px solid white;
+  }
+
+  .first-column > div {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  td {
+    justify-self: start;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .single-price {
+    display: none;
+  }
+
+  .quantity {
+    grid-column: 2/3;
+    justify-self: end;
+  }
+
+  .total-price {
+    justify-self: end;
+    grid-column: span 3;
+  }
+
+  .remove-container {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: end;
+  }
+
+  p {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-container {
+    margin: 0.25rem;
+  }
+}

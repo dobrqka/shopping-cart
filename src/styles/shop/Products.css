@@ -10,7 +10,20 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 5%;
   padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .products {
+    margin: 2%;
+    padding: 1rem;
+    /* background: none; */
+  }
+
+  .product-items {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 3rem;
+  }
 }

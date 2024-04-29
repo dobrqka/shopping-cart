@@ -11,10 +11,10 @@ export const CartItem = ({ title, price, quantity, remove, image }) => {
           <p>{title}</p>
         </div>
       </td>
-      <td>${price.toFixed(2)}</td>
-      <td>x{quantity}</td>
-      <td>${(price * quantity).toFixed(2)}</td>
-      <td>
+      <td className="single-price">${price.toFixed(2)}</td>
+      <td className="quantity">x{quantity}</td>
+      <td className="total-price">${(price * quantity).toFixed(2)}</td>
+      <td className="remove-container">
         <button className="remove-button" onClick={remove}>
           x
         </button>

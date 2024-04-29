@@ -21,3 +21,20 @@
   left: auto;
   margin: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .shop {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .shop h1 {
+    display: none;
+  }
+
+  .shop .back-button {
+    position: relative;
+    right: 0;
+    margin: 1rem;
+  }
+}
