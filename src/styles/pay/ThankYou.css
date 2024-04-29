@@ -19,3 +19,32 @@
 .thank-you p {
   font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+  .thank-you {
+    width: auto;
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .thank-you h1 {
+    font-size: 2rem;
+  }
+
+  .thank-you h2 {
+    font-size: 1.25rem;
+  }
+
+  .thank-you img {
+    width: 100%;
+  }
+
+  .thank-you p {
+    font-weight: 500;
+    margin: 1rem;
+  }
+
+  .thank-you button {
+    margin: 1rem;
+  }
+}
