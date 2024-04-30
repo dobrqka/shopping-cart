@@ -58,10 +58,18 @@
 
 @media only screen and (max-width: 600px) {
   .order-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
+  }
+
+  .order-item h3 {
+    justify-self: start;
+  }
+
+  .order-item .remove-container {
+    grid-column: 4/5;
   }
 
   .checkout-single-price {
