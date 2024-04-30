@@ -21,7 +21,16 @@ export const NumberInput = ({
           changeQuantity={changeQuantity}
         />
       ) : (
-        <button className="quantity-button" onClick={() => setEditable(true)}>
+        <button
+          className="quantity-button"
+          onClick={(e) => {
+            if (window.innerWidth > 600) {
+              setEditable(true);
+            } else {
+              changeQuantity(+e.target.textContent + 1);
+            }
+          }}
+        >
           {quantity}
         </button>
       )}

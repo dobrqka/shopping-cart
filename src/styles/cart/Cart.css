@@ -122,7 +122,8 @@ p {
 
   tr {
     display: grid;
-    grid-template-columns: 60% 20% 20%;
+    row-gap: 0.25rem;
+    grid-template-columns: 70% 10% 20%;
     border-bottom: 1px solid white;
   }
 
@@ -138,7 +139,7 @@ p {
 
   .first-column {
     grid-row: span 2;
-    align-self: stretch;
+    align-self: center;
   }
 
   td {
@@ -154,6 +155,7 @@ p {
 
   .quantity {
     grid-row: span 2;
+    font-size: 1rem;
     grid-column: 2/3;
     justify-self: center;
   }
@@ -161,6 +163,7 @@ p {
   .total-price {
     justify-self: end;
     grid-column: 3/4;
+    font-size: 1rem;
   }
 
   .remove-container {
@@ -177,10 +180,12 @@ p {
 
   .image-container {
     height: 45px;
-    margin: 0.25rem;
+    width: 35px;
+    margin: 0 0.25rem;
   }
 
   .image-container img {
     height: auto;
+    padding: 0.1rem;
   }
 }

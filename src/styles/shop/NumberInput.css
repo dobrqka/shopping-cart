@@ -55,3 +55,25 @@
   color: white;
   transform: scale(1.05);
 }
+
+@media only screen and (max-width: 600px) {
+  .quantity-button {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .number-input input {
+    padding: 0;
+    margin: 0;
+  }
+
+  .number-input button {
+    padding: 0;
+  }
+
+  .increase,
+  .decrease {
+    font-size: 1.5rem;
+  }
+}
