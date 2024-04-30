@@ -32,9 +32,16 @@
     display: none;
   }
 
+  .shop a {
+    position: sticky;
+    top: 3.25rem;
+    z-index: 1;
+  }
+
   .shop .back-button {
     position: relative;
     right: 0;
     margin: 1rem;
+    border: 3px solid white;
   }
 }
