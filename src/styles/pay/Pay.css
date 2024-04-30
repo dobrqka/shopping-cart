@@ -38,3 +38,28 @@
   right: auto;
   margin: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .pay {
+    background-size: contain;
+    background-repeat: repeat;
+  }
+
+  .pay h1 {
+    display: none;
+  }
+
+  .pay .back-button {
+    top: 0;
+    position: relative;
+    left: 0;
+    margin: 0.5rem;
+  }
+
+  .pay h2 {
+    margin: 0.5rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+  }
+}

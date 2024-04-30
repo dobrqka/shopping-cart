@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: 600px) {
   .cart-item {
-    padding: 0;
+    padding: 0.5rem 0;
     width: calc(100vw - 3.2rem);
   }
 }

@@ -15,3 +15,17 @@
 .total {
   grid-column: span 2;
 }
+
+@media only screen and (max-width: 600px) {
+  .order-summary {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
+
+  .order-items {
+    grid-row: 1/2;
+    width: auto;
+    margin: 0;
+  }
+}

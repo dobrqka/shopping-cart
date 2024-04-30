@@ -55,3 +55,20 @@
 .remove-container > .remove-button:active {
   background-color: rgb(177, 0, 0);
 }
+
+@media only screen and (max-width: 600px) {
+  .order-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .checkout-single-price {
+    display: none;
+  }
+
+  .checkout-quantity {
+    display: none;
+  }
+}

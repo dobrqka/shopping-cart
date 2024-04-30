@@ -73,3 +73,30 @@ form .payment-option {
   color: white;
   background-color: red;
 }
+
+@media only screen and (max-width: 600px) {
+  .order-form {
+    margin: 0.25rem;
+    padding: 0.25rem;
+  }
+
+  .order-form fieldset {
+    margin: 0;
+  }
+
+  .order-form legend {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .order-form fieldset div {
+    margin: 0.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .order-now {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}

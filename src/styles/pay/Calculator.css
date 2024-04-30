@@ -16,3 +16,20 @@
 .calculator p:last-child {
   font-weight: 800;
 }
+
+@media only screen and (max-width: 600px) {
+  .calculator {
+    margin: 0;
+    padding: 0.25rem;
+  }
+
+  .calculator *:nth-child(n) {
+    margin: 0.15rem;
+    font-weight: 400;
+    grid-column: 3/6;
+  }
+
+  .calculator p:last-child {
+    font-weight: 700;
+  }
+}
