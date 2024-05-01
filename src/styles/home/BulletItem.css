@@ -2,7 +2,10 @@
   background-color: rgb(228, 228, 228);
   border-radius: 2rem;
   padding: 1rem;
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .bullet-item h1 {
@@ -10,13 +13,14 @@
 }
 
 .bullet-item p {
+  margin-top: 0;
   font-weight: 500;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .bullet-item {
     width: 90%;
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   .bullet-list .bullet-item h1 {
@@ -25,5 +29,13 @@
 
   .bullet-item > p {
     font-size: 1.25rem;
+    padding: 0 15%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bullet-item > p {
+    font-size: 1.25rem;
+    padding: 0 5%;
   }
 }

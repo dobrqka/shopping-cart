@@ -2,11 +2,11 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .burger-menu {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 5rem;
   }
 
   .burger-button {
