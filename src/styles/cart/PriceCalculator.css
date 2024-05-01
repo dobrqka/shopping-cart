@@ -11,6 +11,7 @@
 
 .price-calculator *:nth-child(n) {
   border-right: 1px solid white;
+  font-weight: 600;
 }
 
 .price-calculator p {
@@ -94,6 +95,7 @@
 
   .price-calculator *:nth-child(n) {
     border-right: none;
+    border: none;
     margin: 0;
   }
 

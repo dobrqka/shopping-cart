@@ -106,7 +106,7 @@ p {
   z-index: 0;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .cart h1 {
     display: none;
   }
