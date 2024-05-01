@@ -20,7 +20,7 @@ export const Cart = () => {
     <>
       <div className="cart">
         <BackButton page="shop" direction="Back" />
-        <h1>Cart page</h1>
+        <h1>Cart</h1>
         {addedProducts ? (
           <div className="cart-products">
             <table>

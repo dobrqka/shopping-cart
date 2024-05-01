@@ -1,5 +1,4 @@
 .products {
-  background-color: rgb(255, 255, 255, 0.8);
   margin: 0 10% 3%;
   padding-top: 2rem;
   border-radius: 8px;
@@ -14,16 +13,21 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .products {
     margin: 2%;
     padding: 1rem;
-    background: none;
   }
 
   .product-items {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .product-items {
+    grid-template-columns: 1fr;
   }
 }

@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 1.5rem;
+  padding: 0;
   border-radius: 8px;
   font-size: 1.25rem;
   align-items: center;
@@ -10,6 +11,10 @@
 
 .price-calculator *:nth-child(n) {
   border-right: 1px solid white;
+}
+
+.price-calculator p {
+  padding: 0 0.5rem;
 }
 
 .price-calculator *:last-child {
@@ -36,7 +41,48 @@
   background-color: rgb(0, 165, 0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+  .price-calculator {
+    margin: 1.5rem 0.25rem;
+  }
+
+  .price-calculator *:nth-child(n) {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .price-calculator p {
+    padding: 0;
+  }
+
+  .price-calculator *:last-child {
+    align-self: center;
+    margin: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .price-calculator {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1rem 1rem 1rem;
+  }
+  .price-calculator *:nth-child(n) {
+    border-right: none;
+    border-bottom: 1px solid white;
+    margin: 0.5rem;
+  }
+  .price-calculator *:last-child {
+    border: none;
+    align-self: center;
+    margin: 0.25rem;
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .price-calculator {
     display: flex;
     flex-direction: column;

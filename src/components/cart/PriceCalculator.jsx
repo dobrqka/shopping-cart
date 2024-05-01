@@ -19,7 +19,7 @@ export const PriceCalculator = ({ addedProducts }) => {
       <p>Shipping: $10.00</p>
       <p>Total: ${(totalPrice() + 10 + totalPrice() * 0.2).toFixed(2)}</p>
       <Link to="/pay">
-        <button className="pay-button">Go to checkout</button>
+        <button className="pay-button">Checkout</button>
       </Link>
     </div>
   );

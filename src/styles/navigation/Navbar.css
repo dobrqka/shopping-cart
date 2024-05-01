@@ -43,7 +43,7 @@
     grid-template-columns: 1fr;
   }
 
-  a {
+  .nav-bar a {
     display: grid;
   }
 

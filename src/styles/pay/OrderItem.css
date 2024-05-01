@@ -28,13 +28,13 @@
   border-radius: 8px;
 }
 
-.remove-container {
+.order-item .remove-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.remove-container > .remove-button {
+.order-item .remove-container > .remove-button {
   padding: 0.25rem;
   border: none;
   color: white;
@@ -48,11 +48,11 @@
   transition: 0.3s;
 }
 
-.remove-container > .remove-button:hover {
+.order-item .remove-container > .remove-button:hover {
   background-color: rgb(255, 63, 63);
 }
 
-.remove-container > .remove-button:active {
+.order-item .remove-container > .remove-button:active {
   background-color: rgb(177, 0, 0);
 }
 

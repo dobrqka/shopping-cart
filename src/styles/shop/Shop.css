@@ -16,13 +16,21 @@
   font-style: normal;
 }
 
+.shop h1 {
+  background-color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
 .shop .back-button {
   right: 10%;
   left: auto;
   margin: 2rem;
+  border: 3px solid white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .shop {
     background-size: cover;
     background-position: center;
@@ -42,6 +50,5 @@
     position: relative;
     right: 0;
     margin: 1rem;
-    border: 3px solid white;
   }
 }
