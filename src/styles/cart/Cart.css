@@ -188,7 +188,7 @@ p {
     justify-self: end;
   }
 
-  p {
+  .cart p {
     font-weight: 600;
     padding: 0;
     margin: 0;

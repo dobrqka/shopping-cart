@@ -20,7 +20,7 @@
   font-weight: 600;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .thank-you {
     width: auto;
     margin: 1rem;
@@ -36,7 +36,7 @@
   }
 
   .thank-you img {
-    width: 100%;
+    width: 90%;
   }
 
   .thank-you p {
@@ -45,6 +45,7 @@
   }
 
   .thank-you button {
-    margin: 1rem;
+    /* margin: 1rem; */
+    font-size: 1rem;
   }
 }
