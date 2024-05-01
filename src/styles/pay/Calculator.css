@@ -1,32 +1,27 @@
 .calculator {
   border-bottom: 1px solid white;
-  margin: 1rem;
-  padding-bottom: 1rem;
+  margin: 0;
+  padding: 0 2rem;
   text-align: end;
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr 2fr 1fr;
 }
 
 .calculator *:nth-child(n) {
   margin: 0.5rem;
   font-weight: 400;
-  grid-column: 4/6;
 }
 
 .calculator p:last-child {
   font-weight: 800;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .calculator {
-    margin: 0;
-    padding: 0.25rem;
+    padding: 0.5rem 2rem;
   }
 
   .calculator *:nth-child(n) {
     margin: 0.15rem;
     font-weight: 400;
-    grid-column: 3/6;
   }
 
   .calculator p:last-child {

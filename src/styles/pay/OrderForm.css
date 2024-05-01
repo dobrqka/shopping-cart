@@ -74,7 +74,7 @@ form .payment-option {
   background-color: red;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .order-form {
     margin: 0.25rem;
     padding: 0.25rem;

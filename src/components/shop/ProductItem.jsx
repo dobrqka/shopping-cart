@@ -25,10 +25,12 @@ export const ProductItem = ({ product, add }) => {
 
   return (
     <div className="product-item">
-      <img src={product.image} />
-      <div>
-        <h3>{product.title}</h3>
-        <p>${product.price}</p>
+      <div className="product-general">
+        <img src={product.image} />
+        <div>
+          <h3>{product.title}</h3>
+          <p>${product.price}</p>
+        </div>
       </div>
       <div className="add-to-cart">
         <NumberInput

@@ -10,6 +10,7 @@
   background-color: green;
   color: white;
   transition: 0.4s;
+  font-size: 1.25rem;
 }
 
 .back-button:hover {

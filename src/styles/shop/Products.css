@@ -9,6 +9,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  row-gap: 0;
   margin-bottom: 5%;
   padding: 0;
 }
@@ -20,14 +21,7 @@
   }
 
   .product-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .product-items {
-    grid-template-columns: 1fr;
+    gap: 1rem;
+    row-gap: 0;
   }
 }

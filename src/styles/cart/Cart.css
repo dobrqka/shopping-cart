@@ -182,7 +182,7 @@ p {
     font-size: 1rem;
   }
 
-  .remove-container {
+  .cart .remove-container {
     grid-row: 1/2;
     grid-column: 3/4;
     justify-self: end;
