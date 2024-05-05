@@ -32,12 +32,14 @@
   gap: 0.25rem;
 }
 
-.product-general:hover + .add-to-cart {
+.product-item:hover > .add-to-cart,
+.add-to-cart:hover {
   cursor: pointer;
   visibility: visible;
 }
 
-.product-general:hover {
+.product-general:hover,
+.product-item:hover > .product-general {
   cursor: pointer;
   border-bottom: none;
   padding-bottom: 0;
